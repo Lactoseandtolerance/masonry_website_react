@@ -3,45 +3,48 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
 import FAQ from '../components/FAQ';
-import { services } from '../data/services';
-import { testimonials } from '../data/testimonials';
-import { faqs } from '../data/faqs';
+import { services, getTranslatedServices } from '../data/services';
+import { testimonials, getTranslatedTestimonials } from '../data/testimonials';
 import '../styles/pages/Services.css';
 
 const Services = () => {
+  const { t } = useTranslation();
+
+  // Get translated services using our helper function
+  const translatedServices = getTranslatedServices(t);
+  
   const processes = [
     {
       step: 1,
-      title: 'Initial Consultation',
-      description: 'We start with a thorough consultation to understand your needs and objectives.'
+      title: t('services.process.steps.consultation.title'),
+      description: t('services.process.steps.consultation.description')
     },
     {
       step: 2,
-      title: 'Custom Proposal',
-      description: 'We create a tailored proposal outlining our approach, timeline, and pricing.'
+      title: t('services.process.steps.proposal.title'),
+      description: t('services.process.steps.proposal.description')
     },
     {
       step: 3,
-      title: 'Service Delivery',
-      description: 'Our team executes the plan with attention to detail and regular updates.'
+      title: t('services.process.steps.delivery.title'),
+      description: t('services.process.steps.delivery.description')
     },
     {
       step: 4,
-      title: 'Review & Feedback',
-      description: 'We review the results together and collect your feedback for continuous improvement.'
+      title: t('services.process.steps.review.title'),
+      description: t('services.process.steps.review.description')
     }
   ];
   
   return (
     <>
       <Hero
-        title="Our Services"
-        subtitle="Comprehensive Solutions for Your Business"
-        description="Explore our range of professional services designed to help your business grow and succeed."
+        section="services"
         image="/images/services-hero.jpg"
       />
       
@@ -49,15 +52,15 @@ const Services = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">What We Offer</h2>
+              <h2 className="section-title">{t('services.overview.title')}</h2>
               <p className="section-subtitle">
-                Discover our comprehensive range of services tailored to meet your business needs
+                {t('services.overview.subtitle')}
               </p>
             </Col>
           </Row>
           
           <Row>
-            {services.map((service) => (
+            {translatedServices.map((service) => (
               <Col lg={4} md={6} className="mb-4" key={service.id}>
                 <ServiceCard {...service} />
               </Col>
@@ -70,9 +73,9 @@ const Services = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Our Process</h2>
+              <h2 className="section-title">{t('services.process.title')}</h2>
               <p className="section-subtitle">
-                A simple, effective approach to delivering exceptional results
+                {t('services.process.subtitle')}
               </p>
             </Col>
           </Row>
@@ -103,9 +106,9 @@ const Services = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Pricing</h2>
+              <h2 className="section-title">{t('services.pricing.title')}</h2>
               <p className="section-subtitle">
-                Transparent pricing options designed to fit your budget
+                {t('services.pricing.subtitle')}
               </p>
             </Col>
           </Row>
@@ -114,11 +117,11 @@ const Services = () => {
             <Col lg={4} md={6} className="mb-4">
               <Card className="pricing-card h-100">
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title as="h3" className="text-center">Basic Package</Card.Title>
+                  <Card.Title as="h3" className="text-center">{t('services.pricing.packages.basic')}</Card.Title>
                   <div className="pricing-value text-center my-4">
                     <span className="currency">$</span>
                     <span className="price">299</span>
-                    <span className="period">/month</span>
+                    <span className="period">{t('services.pricing.packages.month')}</span>
                   </div>
                   
                   <ul className="pricing-features">
@@ -132,7 +135,7 @@ const Services = () => {
                   <div className="mt-auto text-center">
                     <Link to="/contact">
                       <Button variant="outline-primary" className="w-100">
-                        Get Started
+                        {t('services.pricing.packages.getStarted')}
                       </Button>
                     </Link>
                   </div>
@@ -142,13 +145,13 @@ const Services = () => {
             
             <Col lg={4} md={6} className="mb-4">
               <Card className="pricing-card featured h-100">
-                <div className="popular-badge">Most Popular</div>
+                <div className="popular-badge">{t('services.pricing.packages.popular')}</div>
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title as="h3" className="text-center">Premium Package</Card.Title>
+                  <Card.Title as="h3" className="text-center">{t('services.pricing.packages.premium')}</Card.Title>
                   <div className="pricing-value text-center my-4">
                     <span className="currency">$</span>
                     <span className="price">599</span>
-                    <span className="period">/month</span>
+                    <span className="period">{t('services.pricing.packages.month')}</span>
                   </div>
                   
                   <ul className="pricing-features">
@@ -162,7 +165,7 @@ const Services = () => {
                   <div className="mt-auto text-center">
                     <Link to="/contact">
                       <Button variant="primary" className="w-100">
-                        Get Started
+                        {t('services.pricing.packages.getStarted')}
                       </Button>
                     </Link>
                   </div>
@@ -173,11 +176,11 @@ const Services = () => {
             <Col lg={4} md={6} className="mb-4">
               <Card className="pricing-card h-100">
                 <Card.Body className="d-flex flex-column">
-                  <Card.Title as="h3" className="text-center">Enterprise Package</Card.Title>
+                  <Card.Title as="h3" className="text-center">{t('services.pricing.packages.enterprise')}</Card.Title>
                   <div className="pricing-value text-center my-4">
                     <span className="currency">$</span>
                     <span className="price">999</span>
-                    <span className="period">/month</span>
+                    <span className="period">{t('services.pricing.packages.month')}</span>
                   </div>
                   
                   <ul className="pricing-features">
@@ -192,7 +195,7 @@ const Services = () => {
                   <div className="mt-auto text-center">
                     <Link to="/contact">
                       <Button variant="outline-primary" className="w-100">
-                        Get Started
+                        {t('services.pricing.packages.getStarted')}
                       </Button>
                     </Link>
                   </div>
@@ -203,7 +206,7 @@ const Services = () => {
           
           <Row className="mt-4 text-center">
             <Col>
-              <p>Need a custom solution? <Link to="/contact">Contact us</Link> for a personalized quote.</p>
+              <p>{t('services.pricing.packages.custom')}</p>
             </Col>
           </Row>
         </Container>
@@ -211,55 +214,57 @@ const Services = () => {
       
       <section id="testimonials" className="testimonials-section py-5 bg-light">
         <Container>
-          <Row className="text-center mb-5">
+            <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">What Our Clients Say</h2>
-              <p className="section-subtitle">
-                Read testimonials from our satisfied clients
-              </p>
+                <h2 className="section-title">{t('services.testimonials.title')}</h2>
+                <p className="section-subtitle">
+                {t('services.testimonials.subtitle')}
+                </p>
             </Col>
-          </Row>
-          
-          <Row>
-            {testimonials.map((testimonial, index) => (
-              <Col lg={4} md={6} className="mb-4" key={index}>
+            </Row>
+            
+            <Row>
+            {getTranslatedTestimonials(t).map((testimonial, index) => (
+                <Col lg={4} md={6} className="mb-4" key={index}>
                 <Testimonial {...testimonial} />
-              </Col>
+                </Col>
             ))}
-          </Row>
+            </Row>
         </Container>
       </section>
       
+      // This is just the FAQ section of the Services page
+
       <section className="faq-section py-5">
-        <Container>
-          <Row className="text-center mb-5">
-            <Col>
-              <h2 className="section-title">Frequently Asked Questions</h2>
-              <p className="section-subtitle">
-                Find answers to common questions about our services
-              </p>
-            </Col>
-          </Row>
-          
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <FAQ faqs={faqs} />
-            </Col>
-          </Row>
-          
-          <Row className="mt-5 text-center">
-            <Col>
-              <p className="mb-4">
-                Don't see your question here? Contact us for more information.
-              </p>
-              <Link to="/contact">
-                <Button variant="primary">
-                  Ask a Question
-                </Button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
+       <Container>
+        <Row className="text-center mb-5">
+        <Col>
+            <h2 className="section-title">{t('services.faq.title')}</h2>
+            <p className="section-subtitle">
+            {t('services.faq.subtitle')}
+            </p>
+        </Col>
+        </Row>
+        
+        <Row className="justify-content-center">
+        <Col lg={8}>
+            <FAQ />
+        </Col>
+        </Row>
+        
+        <Row className="mt-5 text-center">
+        <Col>
+            <p className="mb-4">
+            {t('services.faq.notFound')}
+            </p>
+            <Link to="/contact">
+            <Button variant="primary">
+                {t('services.faq.askButton')}
+            </Button>
+            </Link>
+        </Col>
+        </Row>
+       </Container>
       </section>
     </>
   );

@@ -1,50 +1,63 @@
+// Using translation keys for testimonials
 export const testimonials = [
     {
-      name: 'Robert Thompson',
-      position: 'CEO',
-      company: 'Thompson Enterprises',
+      nameKey: 'testimonials.robert.name',
+      positionKey: 'testimonials.robert.position',
+      companyKey: 'testimonials.robert.company',
       rating: 5,
-      text: 'Working with this team has been a game-changer for our business. Their expertise and dedication helped us increase our revenue by 40% in just six months. I highly recommend their services to any business looking to grow.',
+      textKey: 'testimonials.robert.text',
       image: '/images/testimonials/client-1.jpg'
     },
     {
-      name: 'Jennifer Wilson',
-      position: 'Marketing Director',
-      company: 'Wilson & Co.',
+      nameKey: 'testimonials.jennifer.name',
+      positionKey: 'testimonials.jennifer.position',
+      companyKey: 'testimonials.jennifer.company',
       rating: 5,
-      text: 'The level of professionalism and quality of service we received was outstanding. They took the time to understand our needs and delivered solutions that exceeded our expectations. We will definitely continue to work with them.',
+      textKey: 'testimonials.jennifer.text',
       image: '/images/testimonials/client-2.jpg'
     },
     {
-      name: 'David Martinez',
-      position: 'Operations Manager',
-      company: 'TechSolutions Inc.',
+      nameKey: 'testimonials.david.name',
+      positionKey: 'testimonials.david.position',
+      companyKey: 'testimonials.david.company',
       rating: 4,
-      text: 'Their team provided valuable insights that helped us streamline our operations and reduce costs. The implementation was smooth, and the results were immediate. A reliable partner for any business.',
+      textKey: 'testimonials.david.text',
       image: '/images/testimonials/client-3.jpg'
     },
     {
-      name: 'Lisa Anderson',
-      position: 'Small Business Owner',
-      company: 'Anderson Boutique',
+      nameKey: 'testimonials.lisa.name',
+      positionKey: 'testimonials.lisa.position',
+      companyKey: 'testimonials.lisa.company',
       rating: 5,
-      text: 'As a small business owner, I was looking for affordable yet effective solutions. They delivered exactly what I needed without breaking my budget. Their personalized approach made all the difference.',
+      textKey: 'testimonials.lisa.text',
       image: '/images/testimonials/client-4.jpg'
     },
     {
-      name: 'James Wilson',
-      position: 'IT Director',
-      company: 'Global Tech',
+      nameKey: 'testimonials.james.name',
+      positionKey: 'testimonials.james.position',
+      companyKey: 'testimonials.james.company',
       rating: 4,
-      text: 'The IT security services provided were comprehensive and exactly what our company needed. They identified vulnerabilities we weren\'t aware of and implemented robust solutions to protect our systems.',
+      textKey: 'testimonials.james.text',
       image: '/images/testimonials/client-5.jpg'
     },
     {
-      name: 'Michelle Parker',
-      position: 'HR Manager',
-      company: 'Parker Industries',
+      nameKey: 'testimonials.michelle.name',
+      positionKey: 'testimonials.michelle.position',
+      companyKey: 'testimonials.michelle.company',
       rating: 5,
-      text: 'Their HR services transformed our recruitment and training processes. We\'ve seen a significant improvement in employee satisfaction and retention. A truly valuable partnership for our company.',
+      textKey: 'testimonials.michelle.text',
       image: '/images/testimonials/client-6.jpg'
     }
   ];
+  
+  // Helper function to get translated testimonials
+  export const getTranslatedTestimonials = (t) => {
+    return testimonials.map(testimonial => ({
+      name: t(testimonial.nameKey),
+      position: t(testimonial.positionKey),
+      company: t(testimonial.companyKey),
+      rating: testimonial.rating,
+      text: t(testimonial.textKey),
+      image: testimonial.image
+    }));
+  };

@@ -1,0 +1,377 @@
+{
+    "navigation": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "getQuote": "Get a Quote"
+    },
+    "home": {
+      "hero": {
+        "title": "Your Trusted Business Partner",
+        "subtitle": "Professional Services Tailored to Your Needs",
+        "description": "We provide top-quality solutions that help your business grow and thrive in today's competitive market.",
+        "cta": "Get Started"
+      },
+      "features": {
+        "title": "Why Choose Us",
+        "subtitle": "Discover what sets our services apart from the competition",
+        "quality": {
+          "title": "Quality Service",
+          "description": "We pride ourselves on delivering exceptional quality in every project we undertake."
+        },
+        "team": {
+          "title": "Expert Team",
+          "description": "Our team of professionals has the expertise to tackle even the most complex challenges."
+        },
+        "delivery": {
+          "title": "Timely Delivery",
+          "description": "We understand the value of your time and always deliver our services on schedule."
+        },
+        "satisfaction": {
+          "title": "Customer Satisfaction",
+          "description": "Your satisfaction is our top priority, and we go above and beyond to ensure it."
+        }
+      },
+      "services": {
+        "title": "Our Services",
+        "subtitle": "Explore our range of professional services designed to meet your business needs",
+        "viewAll": "View All Services"
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Contact us today for a free consultation and discover how our services can help your business succeed.",
+        "contactUs": "Contact Us",
+        "learnMore": "Learn More"
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "subtitle": "Don't just take our word for it - hear from our satisfied clients",
+        "viewMore": "View More Testimonials"
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "About Our Company",
+        "subtitle": "Learn More About Who We Are",
+        "description": "Discover our story, mission, values, and the dedicated team behind our success."
+      },
+      "intro": {
+        "title": "Our Story",
+        "stats": {
+          "years": "Years Experience",
+          "clients": "Clients Served",
+          "projects": "Projects Completed",
+          "awards": "Industry Awards"
+        }
+      },
+      "values": {
+        "title": "Our Mission & Values",
+        "subtitle": "The principles that guide our business and define who we are",
+        "mission": {
+          "title": "Mission",
+          "description": "To provide exceptional services that exceed client expectations and deliver measurable results for their business."
+        },
+        "vision": {
+          "title": "Vision",
+          "description": "To be the leading service provider in our industry, recognized for excellence, innovation, and customer satisfaction."
+        },
+        "values": {
+          "title": "Values",
+          "description": "Integrity, excellence, accountability, innovation, and customer focus drive everything we do."
+        },
+        "growth": {
+          "title": "Growth",
+          "description": "We are committed to continuous growth, both for our clients' businesses and for our own professional development."
+        }
+      },
+      "expertise": {
+        "title": "Our Expertise",
+        "journey": "Our Journey"
+      },
+      "team": {
+        "title": "Meet Our Team",
+        "subtitle": "The dedicated professionals behind our success"
+      },
+      "cta": {
+        "title": "Ready to Work With Us?",
+        "description": "Contact our team today to discuss your project and discover how we can help you achieve your business goals.",
+        "button": "Get in Touch"
+      }
+    },
+    "services": {
+      "hero": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive Solutions for Your Business",
+        "description": "Explore our range of professional services designed to help your business grow and succeed."
+      },
+      "overview": {
+        "title": "What We Offer",
+        "subtitle": "Discover our comprehensive range of services tailored to meet your business needs"
+      },
+      "process": {
+        "title": "Our Process",
+        "subtitle": "A simple, effective approach to delivering exceptional results",
+        "steps": {
+          "consultation": {
+            "title": "Initial Consultation",
+            "description": "We start with a thorough consultation to understand your needs and objectives."
+          },
+          "proposal": {
+            "title": "Custom Proposal",
+            "description": "We create a tailored proposal outlining our approach, timeline, and pricing."
+          },
+          "delivery": {
+            "title": "Service Delivery",
+            "description": "Our team executes the plan with attention to detail and regular updates."
+          },
+          "review": {
+            "title": "Review & Feedback",
+            "description": "We review the results together and collect your feedback for continuous improvement."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Pricing",
+        "subtitle": "Transparent pricing options designed to fit your budget",
+        "packages": {
+          "basic": "Basic Package",
+          "premium": "Premium Package",
+          "enterprise": "Enterprise Package",
+          "popular": "Most Popular",
+          "getStarted": "Get Started",
+          "month": "/month",
+          "custom": "Need a custom solution? Contact us for a personalized quote."
+        }
+      },
+      "items": {
+        "consulting": {
+          "title": "Business Consulting",
+          "description": "Strategic advice to help your business grow and overcome challenges.",
+          "features": {
+            "analysis": "Business analysis",
+            "strategy": "Strategic planning",
+            "process": "Process improvement",
+            "growth": "Growth strategies",
+            "metrics": "Performance metrics"
+          }
+        },
+        "webdev": {
+          "title": "Web Development",
+          "description": "Custom website solutions designed to meet your business needs and goals.",
+          "features": {
+            "responsive": "Responsive design",
+            "ecommerce": "E-commerce solutions",
+            "cms": "Content management",
+            "applications": "Web applications",
+            "maintenance": "Maintenance support"
+          }
+        },
+        "marketing": {
+          "title": "Digital Marketing",
+          "description": "Comprehensive digital marketing strategies to boost your online presence.",
+          "features": {
+            "seo": "SEO optimization",
+            "content": "Content marketing",
+            "social": "Social media management",
+            "email": "Email campaigns",
+            "analytics": "Analytics and reporting"
+          }
+        },
+        "hr": {
+          "title": "HR Services",
+          "description": "Professional human resources solutions to manage and develop your workforce.",
+          "features": {
+            "recruitment": "Recruitment and staffing",
+            "training": "Employee training",
+            "performance": "Performance management",
+            "policy": "Policy development",
+            "compliance": "Compliance consulting"
+          }
+        },
+        "security": {
+          "title": "IT Security",
+          "description": "Protect your business with cutting-edge cybersecurity solutions.",
+          "features": {
+            "assessment": "Security assessments",
+            "network": "Network protection",
+            "encryption": "Data encryption",
+            "incident": "Incident response",
+            "training": "Employee training"
+          }
+        },
+        "analytics": {
+          "title": "Data Analytics",
+          "description": "Harness the power of your data to make informed business decisions.",
+          "features": {
+            "visualization": "Data visualization",
+            "intelligence": "Business intelligence",
+            "predictive": "Predictive analytics",
+            "reporting": "Custom reporting",
+            "integration": "Data integration"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "subtitle": "Read testimonials from our satisfied clients"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about our services",
+        "notFound": "Don't see your question here? Contact us for more information.",
+        "askButton": "Ask a Question"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contact Us",
+        "subtitle": "Get in Touch With Our Team",
+        "description": "We're here to answer any questions you may have about our services."
+      },
+      "details": {
+        "title": "How to Reach Us",
+        "subtitle": "We'd love to hear from you. Here's how you can reach our team.",
+        "visit": "Visit Us",
+        "call": "Call Us",
+        "email": "Email Us",
+        "hours": "Business Hours",
+        "social": {
+          "title": "Connect With Us on Social Media"
+        }
+      },
+      "form": {
+        "title": "Send Us a Message",
+        "subtitle": "Fill out the form below, and one of our representatives will get back to you as soon as possible.",
+        "fields": {
+          "name": "Your Name",
+          "email": "Email Address",
+          "phone": "Phone Number",
+          "subject": "Subject",
+          "message": "Your Message",
+          "placeholders": {
+            "name": "Enter your name",
+            "email": "Enter your email",
+            "phone": "Enter your phone number",
+            "subject": "What is this regarding?",
+            "message": "How can we help you?"
+          },
+          "validation": {
+            "name": "Please provide your name.",
+            "email": "Please provide a valid email address.",
+            "subject": "Please provide a subject.",
+            "message": "Please provide a message."
+          },
+          "submit": "Send Message"
+        },
+        "success": {
+          "title": "Thank you for contacting us!",
+          "message": "We've received your message and will get back to you as soon as possible.",
+          "button": "Send Another Message"
+        }
+      },
+      "faq": {
+        "title": "Have Questions?",
+        "description": "Check out our frequently asked questions section for quick answers to common inquiries about our services.",
+        "button": "View FAQs"
+      }
+    },
+    "testimonials": {
+    "robert": {
+      "name": "Robert Thompson",
+      "position": "CEO",
+      "company": "Thompson Enterprises",
+      "text": "Working with this team has been a game-changer for our business. Their expertise and dedication helped us increase our revenue by 40% in just six months. I highly recommend their services to any business looking to grow."
+    },
+    "jennifer": {
+      "name": "Jennifer Wilson",
+      "position": "Marketing Director",
+      "company": "Wilson & Co.",
+      "text": "The level of professionalism and quality of service we received was outstanding. They took the time to understand our needs and delivered solutions that exceeded our expectations. We will definitely continue to work with them."
+    },
+    "david": {
+      "name": "David Martinez",
+      "position": "Operations Manager",
+      "company": "TechSolutions Inc.",
+      "text": "Their team provided valuable insights that helped us streamline our operations and reduce costs. The implementation was smooth, and the results were immediate. A reliable partner for any business."
+    },
+    "lisa": {
+      "name": "Lisa Anderson",
+      "position": "Small Business Owner",
+      "company": "Anderson Boutique",
+      "text": "As a small business owner, I was looking for affordable yet effective solutions. They delivered exactly what I needed without breaking my budget. Their personalized approach made all the difference."
+    },
+    "james": {
+      "name": "James Wilson",
+      "position": "IT Director",
+      "company": "Global Tech",
+      "text": "The IT security services provided were comprehensive and exactly what our company needed. They identified vulnerabilities we weren't aware of and implemented robust solutions to protect our systems."
+    },
+    "michelle": {
+      "name": "Michelle Parker",
+      "position": "HR Manager",
+      "company": "Parker Industries",
+      "text": "Their HR services transformed our recruitment and training processes. We've seen a significant improvement in employee satisfaction and retention. A truly valuable partnership for our company."
+    }
+    },
+    "faqs": {
+    "services": {
+      "question": "What services do you offer?",
+      "answer": "We offer a comprehensive range of services including business consulting, web development, digital marketing, HR services, IT security, and data analytics. Each service is tailored to meet the specific needs of your business."
+    },
+    "pricing": {
+      "question": "How much do your services cost?",
+      "answer": "Our service pricing varies depending on the specific needs of your business. We offer basic packages starting at $299/month, with premium and enterprise options available. We also provide custom quotes for more specialized requirements. Please contact us for a personalized estimate."
+    },
+    "timeline": {
+      "question": "How long does it take to complete a project?",
+      "answer": "Project timelines vary based on the scope and complexity of the work. A simple web development project might take 4-6 weeks, while more comprehensive business consulting engagements could span several months. During our initial consultation, we'll provide you with a detailed timeline for your specific project."
+    },
+    "support": {
+      "question": "Do you offer ongoing support after project completion?",
+      "answer": "Yes, we provide ongoing support for all our services. We offer various support packages to ensure your solutions continue to perform optimally. Our support includes regular maintenance, updates, troubleshooting, and technical assistance whenever you need it."
+    },
+    "business_size": {
+      "question": "Can you work with businesses of any size?",
+      "answer": "Absolutely! We work with businesses of all sizes, from small startups to large enterprises. Our services are scalable and can be tailored to meet the specific needs and budget of your business, regardless of its size."
+    },
+    "industries": {
+      "question": "What industries do you specialize in?",
+      "answer": "While we have experience across a wide range of industries, we have particular expertise in retail, healthcare, finance, technology, and manufacturing. However, our methodologies and approaches can be adapted to virtually any industry sector."
+    },
+    "metrics": {
+      "question": "How do you measure the success of your services?",
+      "answer": "We establish clear, measurable objectives at the beginning of each project and regularly track progress against these goals. Depending on the service, metrics might include revenue growth, cost reduction, website traffic, conversion rates, employee retention, or system security incidents. We provide regular reports to keep you informed of progress."
+    },
+    "guarantees": {
+      "question": "Do you offer any guarantees for your services?",
+      "answer": "We stand behind the quality of our work and are committed to client satisfaction. While specific results can vary based on many factors, we guarantee our professional approach, adherence to agreed timelines, and delivery according to the project specifications. If you're not satisfied with our work, we'll revise it until it meets your expectations."
+    },
+    "getting_started": {
+      "question": "How do we get started working together?",
+      "answer": "Getting started is easy! Simply contact us through our website, by phone, or email to schedule an initial consultation. During this consultation, we'll discuss your business needs, objectives, and how our services can help you achieve your goals. After that, we'll provide a detailed proposal outlining our approach, timeline, and pricing."
+    },
+    "customization": {
+      "question": "Can I customize the services to fit my specific business needs?",
+      "answer": "Yes, customization is at the core of our service approach. We understand that every business is unique, with its own challenges and objectives. We work closely with you to tailor our services to address your specific needs and provide solutions that align with your business goals."
+    }
+  },
+    "footer": {
+      "about": {
+        "description": "We provide top-quality services tailored to meet your needs. Our commitment to excellence and customer satisfaction sets us apart."
+      },
+      "links": "Quick Links",
+      "services": "Our Services",
+      "contact": "Contact Info",
+      "newsletter": {
+        "title": "Subscribe to Our Newsletter",
+        "placeholder": "Your Email",
+        "button": "Subscribe"
+      },
+      "copyright": "© {{year}} Your Business. All Rights Reserved."
+    },
+    "languageSelector": {
+      "english": "English",
+      "spanish": "Spanish"
+    }
+  }

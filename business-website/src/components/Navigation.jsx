@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 import '../styles/Navigation.css';
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +52,7 @@ const Navigation = () => {
               to="/" 
               className={location.pathname === '/' ? 'active' : ''}
             >
-              Home
+              {t('navigation.home')}
             </Nav.Link>
             
             <Nav.Link 
@@ -57,7 +60,7 @@ const Navigation = () => {
               to="/about" 
               className={location.pathname === '/about' ? 'active' : ''}
             >
-              About Us
+              {t('navigation.about')}
             </Nav.Link>
             
             <Nav.Link 
@@ -65,7 +68,7 @@ const Navigation = () => {
               to="/services" 
               className={location.pathname === '/services' ? 'active' : ''}
             >
-              Services
+              {t('navigation.services')}
             </Nav.Link>
             
             <Nav.Link 
@@ -73,8 +76,10 @@ const Navigation = () => {
               to="/contact" 
               className={location.pathname === '/contact' ? 'active' : ''}
             >
-              Contact
+              {t('navigation.contact')}
             </Nav.Link>
+            
+            <LanguageSelector />
             
             <Nav.Link 
               href="#" 
@@ -87,7 +92,7 @@ const Navigation = () => {
                 });
               }}
             >
-              Get a Quote
+              {t('navigation.getQuote')}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

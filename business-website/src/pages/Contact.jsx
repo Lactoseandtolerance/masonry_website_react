@@ -13,15 +13,18 @@ import {
   faInstagram, 
   faLinkedinIn 
 } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
 import ContactForm from '../components/ContactForm';
 import '../styles/pages/Contact.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   const contactInfo = [
     {
       icon: faLocationDot,
-      title: 'Visit Us',
+      title: t('contact.details.visit'),
       details: [
         '123 Business Street',
         'Suite 100',
@@ -31,7 +34,7 @@ const Contact = () => {
     },
     {
       icon: faPhone,
-      title: 'Call Us',
+      title: t('contact.details.call'),
       details: [
         'Main: (123) 456-7890',
         'Sales: (123) 456-7891',
@@ -40,7 +43,7 @@ const Contact = () => {
     },
     {
       icon: faEnvelope,
-      title: 'Email Us',
+      title: t('contact.details.email'),
       details: [
         'info@yourbusiness.com',
         'sales@yourbusiness.com',
@@ -49,7 +52,7 @@ const Contact = () => {
     },
     {
       icon: faClock,
-      title: 'Business Hours',
+      title: t('contact.details.hours'),
       details: [
         'Monday - Friday: 9:00 AM - 5:00 PM',
         'Saturday: 10:00 AM - 2:00 PM',
@@ -68,9 +71,7 @@ const Contact = () => {
   return (
     <>
       <Hero
-        title="Contact Us"
-        subtitle="Get in Touch With Our Team"
-        description="We're here to answer any questions you may have about our services."
+        section="contact"
         image="/images/contact-hero.jpg"
       />
       
@@ -78,9 +79,9 @@ const Contact = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">How to Reach Us</h2>
+              <h2 className="section-title">{t('contact.details.title')}</h2>
               <p className="section-subtitle">
-                We'd love to hear from you. Here's how you can reach our team.
+                {t('contact.details.subtitle')}
               </p>
             </Col>
           </Row>
@@ -107,7 +108,7 @@ const Contact = () => {
           
           <Row className="social-section mt-4">
             <Col className="text-center">
-              <h3 className="mb-3">Connect With Us on Social Media</h3>
+              <h3 className="mb-3">{t('contact.details.social.title')}</h3>
               <div className="social-icons">
                 {socialMedia.map((social, index) => (
                   <a 
@@ -132,10 +133,9 @@ const Contact = () => {
           <Row>
             <Col lg={6} className="mb-4 mb-lg-0">
               <div className="form-wrapper">
-                <h2 className="mb-4">Send Us a Message</h2>
+                <h2 className="mb-4">{t('contact.form.title')}</h2>
                 <p className="mb-4">
-                  Fill out the form below, and one of our representatives will 
-                  get back to you as soon as possible.
+                  {t('contact.form.subtitle')}
                 </p>
                 <ContactForm />
               </div>
@@ -163,13 +163,12 @@ const Contact = () => {
         <Container>
           <Row className="justify-content-center">
             <Col lg={8}>
-              <h2 className="mb-4">Have Questions?</h2>
+              <h2 className="mb-4">{t('contact.faq.title')}</h2>
               <p className="lead mb-4">
-                Check out our frequently asked questions section for quick answers 
-                to common inquiries about our services.
+                {t('contact.faq.description')}
               </p>
               <a href="/services#faq" className="btn btn-primary">
-                View FAQs
+                {t('contact.faq.button')}
               </a>
             </Col>
           </Row>

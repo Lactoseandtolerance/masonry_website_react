@@ -1,0 +1,377 @@
+{
+    "navigation": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "contact": "Contacto",
+      "getQuote": "Solicitar Presupuesto"
+    },
+    "home": {
+      "hero": {
+        "title": "Su Socio Comercial de Confianza",
+        "subtitle": "Servicios Profesionales Adaptados a Sus Necesidades",
+        "description": "Proporcionamos soluciones de alta calidad que ayudan a su negocio a crecer y prosperar en el mercado competitivo actual.",
+        "cta": "Comenzar"
+      },
+      "features": {
+        "title": "¿Por Qué Elegirnos?",
+        "subtitle": "Descubra lo que hace que nuestros servicios se destaquen de la competencia",
+        "quality": {
+          "title": "Servicio de Calidad",
+          "description": "Nos enorgullecemos de ofrecer una calidad excepcional en cada proyecto que emprendemos."
+        },
+        "team": {
+          "title": "Equipo Experto",
+          "description": "Nuestro equipo de profesionales tiene la experiencia para abordar incluso los desafíos más complejos."
+        },
+        "delivery": {
+          "title": "Entrega Puntual",
+          "description": "Entendemos el valor de su tiempo y siempre entregamos nuestros servicios según lo programado."
+        },
+        "satisfaction": {
+          "title": "Satisfacción del Cliente",
+          "description": "Su satisfacción es nuestra principal prioridad, y hacemos todo lo posible para garantizarla."
+        }
+      },
+      "services": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Explore nuestra gama de servicios profesionales diseñados para satisfacer las necesidades de su negocio",
+        "viewAll": "Ver Todos los Servicios"
+      },
+      "cta": {
+        "title": "¿Listo para Comenzar?",
+        "description": "Contáctenos hoy para una consulta gratuita y descubra cómo nuestros servicios pueden ayudar a su negocio a tener éxito.",
+        "contactUs": "Contáctenos",
+        "learnMore": "Más Información"
+      },
+      "testimonials": {
+        "title": "Lo que Dicen Nuestros Clientes",
+        "subtitle": "No confíe solo en nuestra palabra - escuche a nuestros clientes satisfechos",
+        "viewMore": "Ver Más Testimonios"
+      }
+    },
+    "about": {
+      "hero": {
+        "title": "Sobre Nuestra Empresa",
+        "subtitle": "Conozca Más Sobre Quiénes Somos",
+        "description": "Descubra nuestra historia, misión, valores y el equipo dedicado detrás de nuestro éxito."
+      },
+      "intro": {
+        "title": "Nuestra Historia",
+        "stats": {
+          "years": "Años de Experiencia",
+          "clients": "Clientes Atendidos",
+          "projects": "Proyectos Completados",
+          "awards": "Premios de la Industria"
+        }
+      },
+      "values": {
+        "title": "Nuestra Misión y Valores",
+        "subtitle": "Los principios que guían nuestro negocio y definen quiénes somos",
+        "mission": {
+          "title": "Misión",
+          "description": "Proporcionar servicios excepcionales que superen las expectativas de los clientes y ofrezcan resultados medibles para su negocio."
+        },
+        "vision": {
+          "title": "Visión",
+          "description": "Ser el proveedor de servicios líder en nuestra industria, reconocido por la excelencia, la innovación y la satisfacción del cliente."
+        },
+        "values": {
+          "title": "Valores",
+          "description": "Integridad, excelencia, responsabilidad, innovación y enfoque en el cliente impulsan todo lo que hacemos."
+        },
+        "growth": {
+          "title": "Crecimiento",
+          "description": "Estamos comprometidos con el crecimiento continuo, tanto para los negocios de nuestros clientes como para nuestro propio desarrollo profesional."
+        }
+      },
+      "expertise": {
+        "title": "Nuestra Experiencia",
+        "journey": "Nuestro Recorrido"
+      },
+      "team": {
+        "title": "Conozca a Nuestro Equipo",
+        "subtitle": "Los profesionales dedicados detrás de nuestro éxito"
+      },
+      "cta": {
+        "title": "¿Listo para Trabajar con Nosotros?",
+        "description": "Contacte a nuestro equipo hoy para discutir su proyecto y descubrir cómo podemos ayudarle a lograr sus objetivos comerciales.",
+        "button": "Póngase en Contacto"
+      }
+    },
+    "services": {
+      "hero": {
+        "title": "Nuestros Servicios",
+        "subtitle": "Soluciones Integrales para Su Negocio",
+        "description": "Explore nuestra gama de servicios profesionales diseñados para ayudar a su negocio a crecer y tener éxito."
+      },
+      "overview": {
+        "title": "Lo que Ofrecemos",
+        "subtitle": "Descubra nuestra amplia gama de servicios adaptados para satisfacer las necesidades de su negocio"
+      },
+      "process": {
+        "title": "Nuestro Proceso",
+        "subtitle": "Un enfoque simple y efectivo para ofrecer resultados excepcionales",
+        "steps": {
+          "consultation": {
+            "title": "Consulta Inicial",
+            "description": "Comenzamos con una consulta exhaustiva para comprender sus necesidades y objetivos."
+          },
+          "proposal": {
+            "title": "Propuesta Personalizada",
+            "description": "Creamos una propuesta a medida que describe nuestro enfoque, cronograma y precios."
+          },
+          "delivery": {
+            "title": "Entrega del Servicio",
+            "description": "Nuestro equipo ejecuta el plan con atención al detalle y actualizaciones regulares."
+          },
+          "review": {
+            "title": "Revisión y Retroalimentación",
+            "description": "Revisamos los resultados juntos y recopilamos sus comentarios para una mejora continua."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Precios",
+        "subtitle": "Opciones de precios transparentes diseñadas para adaptarse a su presupuesto",
+        "packages": {
+          "basic": "Paquete Básico",
+          "premium": "Paquete Premium",
+          "enterprise": "Paquete Empresarial",
+          "popular": "Más Popular",
+          "getStarted": "Comenzar",
+          "month": "/mes",
+          "custom": "¿Necesita una solución personalizada? Contáctenos para obtener un presupuesto personalizado."
+        }
+      },
+      "items": {
+        "consulting": {
+          "title": "Consultoría de Negocios",
+          "description": "Asesoramiento estratégico para ayudar a su negocio a crecer y superar desafíos.",
+          "features": {
+            "analysis": "Análisis de negocios",
+            "strategy": "Planificación estratégica",
+            "process": "Mejora de procesos",
+            "growth": "Estrategias de crecimiento",
+            "metrics": "Métricas de rendimiento"
+          }
+        },
+        "webdev": {
+          "title": "Desarrollo Web",
+          "description": "Soluciones de sitios web personalizados diseñados para satisfacer las necesidades y objetivos de su negocio.",
+          "features": {
+            "responsive": "Diseño responsivo",
+            "ecommerce": "Soluciones de comercio electrónico",
+            "cms": "Gestión de contenido",
+            "applications": "Aplicaciones web",
+            "maintenance": "Soporte de mantenimiento"
+          }
+        },
+        "marketing": {
+          "title": "Marketing Digital",
+          "description": "Estrategias integrales de marketing digital para impulsar su presencia en línea.",
+          "features": {
+            "seo": "Optimización SEO",
+            "content": "Marketing de contenidos",
+            "social": "Gestión de redes sociales",
+            "email": "Campañas de correo electrónico",
+            "analytics": "Análisis e informes"
+          }
+        },
+        "hr": {
+          "title": "Servicios de RRHH",
+          "description": "Soluciones profesionales de recursos humanos para gestionar y desarrollar su fuerza laboral.",
+          "features": {
+            "recruitment": "Reclutamiento y dotación de personal",
+            "training": "Capacitación de empleados",
+            "performance": "Gestión del rendimiento",
+            "policy": "Desarrollo de políticas",
+            "compliance": "Consultoría de cumplimiento"
+          }
+        },
+        "security": {
+          "title": "Seguridad Informática",
+          "description": "Proteja su negocio con soluciones de ciberseguridad de vanguardia.",
+          "features": {
+            "assessment": "Evaluaciones de seguridad",
+            "network": "Protección de red",
+            "encryption": "Encriptación de datos",
+            "incident": "Respuesta a incidentes",
+            "training": "Capacitación de empleados"
+          }
+        },
+        "analytics": {
+          "title": "Análisis de Datos",
+          "description": "Aproveche el poder de sus datos para tomar decisiones comerciales informadas.",
+          "features": {
+            "visualization": "Visualización de datos",
+            "intelligence": "Inteligencia empresarial",
+            "predictive": "Análisis predictivo",
+            "reporting": "Informes personalizados",
+            "integration": "Integración de datos"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Lo que Dicen Nuestros Clientes",
+        "subtitle": "Lea los testimonios de nuestros clientes satisfechos"
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "subtitle": "Encuentre respuestas a preguntas comunes sobre nuestros servicios",
+        "notFound": "¿No ve su pregunta aquí? Contáctenos para obtener más información.",
+        "askButton": "Hacer una Pregunta"
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Contáctenos",
+        "subtitle": "Póngase en Contacto con Nuestro Equipo",
+        "description": "Estamos aquí para responder cualquier pregunta que pueda tener sobre nuestros servicios."
+      },
+      "details": {
+        "title": "Cómo Contactarnos",
+        "subtitle": "Nos encantaría saber de usted. Así es cómo puede comunicarse con nuestro equipo.",
+        "visit": "Visítenos",
+        "call": "Llámenos",
+        "email": "Envíenos un Correo",
+        "hours": "Horario Comercial",
+        "social": {
+          "title": "Conéctese con Nosotros en Redes Sociales"
+        }
+      },
+      "form": {
+        "title": "Envíenos un Mensaje",
+        "subtitle": "Complete el formulario a continuación y uno de nuestros representantes se pondrá en contacto con usted lo antes posible.",
+        "fields": {
+          "name": "Su Nombre",
+          "email": "Dirección de Correo",
+          "phone": "Número de Teléfono",
+          "subject": "Asunto",
+          "message": "Su Mensaje",
+          "placeholders": {
+            "name": "Ingrese su nombre",
+            "email": "Ingrese su correo electrónico",
+            "phone": "Ingrese su número de teléfono",
+            "subject": "¿De qué se trata?",
+            "message": "¿Cómo podemos ayudarle?"
+          },
+          "validation": {
+            "name": "Por favor proporcione su nombre.",
+            "email": "Por favor proporcione una dirección de correo válida.",
+            "subject": "Por favor proporcione un asunto.",
+            "message": "Por favor proporcione un mensaje."
+          },
+          "submit": "Enviar Mensaje"
+        },
+        "success": {
+          "title": "¡Gracias por contactarnos!",
+          "message": "Hemos recibido su mensaje y nos pondremos en contacto con usted lo antes posible.",
+          "button": "Enviar Otro Mensaje"
+        }
+      },
+      "faq": {
+        "title": "¿Tiene Preguntas?",
+        "description": "Consulte nuestra sección de preguntas frecuentes para obtener respuestas rápidas a consultas comunes sobre nuestros servicios.",
+        "button": "Ver Preguntas Frecuentes"
+      }
+    },
+    "testimonials": {
+    "robert": {
+      "name": "Roberto Thompson",
+      "position": "Director Ejecutivo",
+      "company": "Thompson Enterprises",
+      "text": "Trabajar con este equipo ha sido transformador para nuestro negocio. Su experiencia y dedicación nos ayudaron a aumentar nuestros ingresos en un 40% en solo seis meses. Recomiendo ampliamente sus servicios a cualquier empresa que busque crecer."
+    },
+    "jennifer": {
+      "name": "Jennifer Wilson",
+      "position": "Directora de Marketing",
+      "company": "Wilson & Co.",
+      "text": "El nivel de profesionalismo y calidad de servicio que recibimos fue excepcional. Se tomaron el tiempo para entender nuestras necesidades y entregaron soluciones que superaron nuestras expectativas. Definitivamente continuaremos trabajando con ellos."
+    },
+    "david": {
+      "name": "David Martínez",
+      "position": "Gerente de Operaciones",
+      "company": "TechSolutions Inc.",
+      "text": "Su equipo proporcionó valiosos conocimientos que nos ayudaron a optimizar nuestras operaciones y reducir costos. La implementación fue fluida y los resultados fueron inmediatos. Un socio confiable para cualquier negocio."
+    },
+    "lisa": {
+      "name": "Lisa Anderson",
+      "position": "Propietaria de Pequeña Empresa",
+      "company": "Anderson Boutique",
+      "text": "Como propietaria de una pequeña empresa, buscaba soluciones asequibles pero efectivas. Entregaron exactamente lo que necesitaba sin exceder mi presupuesto. Su enfoque personalizado marcó la diferencia."
+    },
+    "james": {
+      "name": "Jaime Wilson",
+      "position": "Director de TI",
+      "company": "Global Tech",
+      "text": "Los servicios de seguridad informática proporcionados fueron completos y exactamente lo que nuestra empresa necesitaba. Identificaron vulnerabilidades de las que no éramos conscientes e implementaron soluciones robustas para proteger nuestros sistemas."
+    },
+    "michelle": {
+      "name": "Michelle Parker",
+      "position": "Gerente de Recursos Humanos",
+      "company": "Parker Industries",
+      "text": "Sus servicios de recursos humanos transformaron nuestros procesos de reclutamiento y formación. Hemos visto una mejora significativa en la satisfacción y retención de los empleados. Una asociación verdaderamente valiosa para nuestra empresa."
+    }
+    },
+    "faqs": {
+        "services": {
+          "question": "¿Qué servicios ofrecen?",
+          "answer": "Ofrecemos una amplia gama de servicios que incluyen consultoría empresarial, desarrollo web, marketing digital, servicios de recursos humanos, seguridad informática y análisis de datos. Cada servicio está adaptado para satisfacer las necesidades específicas de su negocio."
+        },
+        "pricing": {
+          "question": "¿Cuánto cuestan sus servicios?",
+          "answer": "Los precios de nuestros servicios varían según las necesidades específicas de su negocio. Ofrecemos paquetes básicos desde $299/mes, con opciones premium y empresariales disponibles. También proporcionamos presupuestos personalizados para requisitos más especializados. Póngase en contacto con nosotros para obtener un presupuesto personalizado."
+        },
+        "timeline": {
+          "question": "¿Cuánto tiempo toma completar un proyecto?",
+          "answer": "Los plazos del proyecto varían según el alcance y la complejidad del trabajo. Un proyecto simple de desarrollo web podría tomar de 4 a 6 semanas, mientras que proyectos más completos de consultoría empresarial podrían extenderse varios meses. Durante nuestra consulta inicial, le proporcionaremos un cronograma detallado para su proyecto específico."
+        },
+        "support": {
+          "question": "¿Ofrecen soporte continuo después de la finalización del proyecto?",
+          "answer": "Sí, proporcionamos soporte continuo para todos nuestros servicios. Ofrecemos varios paquetes de soporte para garantizar que sus soluciones continúen funcionando de manera óptima. Nuestro soporte incluye mantenimiento regular, actualizaciones, solución de problemas y asistencia técnica cuando la necesite."
+        },
+        "business_size": {
+          "question": "¿Pueden trabajar con empresas de cualquier tamaño?",
+          "answer": "¡Absolutamente! Trabajamos con empresas de todos los tamaños, desde pequeñas startups hasta grandes corporaciones. Nuestros servicios son escalables y pueden adaptarse para satisfacer las necesidades específicas y el presupuesto de su empresa, independientemente de su tamaño."
+        },
+        "industries": {
+          "question": "¿En qué industrias se especializan?",
+          "answer": "Si bien tenemos experiencia en una amplia gama de industrias, tenemos experiencia particular en retail, salud, finanzas, tecnología y manufactura. Sin embargo, nuestras metodologías y enfoques pueden adaptarse a prácticamente cualquier sector industrial."
+        },
+        "metrics": {
+          "question": "¿Cómo miden el éxito de sus servicios?",
+          "answer": "Establecemos objetivos claros y medibles al comienzo de cada proyecto y hacemos un seguimiento regular del progreso hacia estos objetivos. Dependiendo del servicio, las métricas pueden incluir crecimiento de ingresos, reducción de costos, tráfico del sitio web, tasas de conversión, retención de empleados o incidentes de seguridad del sistema. Proporcionamos informes regulares para mantenerlo informado del progreso."
+        },
+        "guarantees": {
+          "question": "¿Ofrecen alguna garantía para sus servicios?",
+          "answer": "Respaldamos la calidad de nuestro trabajo y estamos comprometidos con la satisfacción del cliente. Si bien los resultados específicos pueden variar según muchos factores, garantizamos nuestro enfoque profesional, el cumplimiento de los plazos acordados y la entrega de acuerdo con las especificaciones del proyecto. Si no está satisfecho con nuestro trabajo, lo revisaremos hasta que cumpla con sus expectativas."
+        },
+        "getting_started": {
+          "question": "¿Cómo comenzamos a trabajar juntos?",
+          "answer": "¡Comenzar es fácil! Simplemente contáctenos a través de nuestro sitio web, por teléfono o correo electrónico para programar una consulta inicial. Durante esta consulta, discutiremos las necesidades de su negocio, sus objetivos y cómo nuestros servicios pueden ayudarlo a alcanzar sus metas. Después de eso, le proporcionaremos una propuesta detallada que describa nuestro enfoque, cronograma y precios."
+        },
+        "customization": {
+          "question": "¿Puedo personalizar los servicios para adaptarlos a las necesidades específicas de mi negocio?",
+          "answer": "Sí, la personalización es el núcleo de nuestro enfoque de servicio. Entendemos que cada negocio es único, con sus propios desafíos y objetivos. Trabajamos estrechamente con usted para adaptar nuestros servicios y abordar sus necesidades específicas y proporcionar soluciones que se alineen con sus objetivos comerciales."
+        }
+    },
+    "footer": {
+      "about": {
+        "description": "Proporcionamos servicios de alta calidad adaptados para satisfacer sus necesidades. Nuestro compromiso con la excelencia y la satisfacción del cliente nos distingue."
+      },
+      "links": "Enlaces Rápidos",
+      "services": "Nuestros Servicios",
+      "contact": "Información de Contacto",
+      "newsletter": {
+        "title": "Suscríbase a Nuestro Boletín",
+        "placeholder": "Su Correo Electrónico",
+        "button": "Suscribirse"
+      },
+      "copyright": "© {{year}} Su Negocio. Todos los Derechos Reservados."
+    },
+    "languageSelector": {
+      "english": "Inglés",
+      "spanish": "Español"
+    }
+  }

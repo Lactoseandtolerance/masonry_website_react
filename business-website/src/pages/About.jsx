@@ -8,12 +8,15 @@ import {
   faHandshake, 
   faChartLine 
 } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
 import TeamMember from '../components/TeamMember';
 import { team } from '../data/team';
 import '../styles/pages/About.css';
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const skills = [
     { name: 'Customer Service', percentage: 95 },
     { name: 'Industry Knowledge', percentage: 90 },
@@ -24,23 +27,23 @@ const About = () => {
   const values = [
     {
       icon: faBullseye,
-      title: 'Mission',
-      description: 'To provide exceptional services that exceed client expectations and deliver measurable results for their business.'
+      title: t('about.values.mission.title'),
+      description: t('about.values.mission.description')
     },
     {
       icon: faEye,
-      title: 'Vision',
-      description: 'To be the leading service provider in our industry, recognized for excellence, innovation, and customer satisfaction.'
+      title: t('about.values.vision.title'),
+      description: t('about.values.vision.description')
     },
     {
       icon: faHandshake,
-      title: 'Values',
-      description: 'Integrity, excellence, accountability, innovation, and customer focus drive everything we do.'
+      title: t('about.values.values.title'),
+      description: t('about.values.values.description')
     },
     {
       icon: faChartLine,
-      title: 'Growth',
-      description: 'We are committed to continuous growth, both for our clients\' businesses and for our own professional development.'
+      title: t('about.values.growth.title'),
+      description: t('about.values.growth.description')
     }
   ];
   
@@ -75,9 +78,7 @@ const About = () => {
   return (
     <>
       <Hero
-        title="About Our Company"
-        subtitle="Learn More About Who We Are"
-        description="Discover our story, mission, values, and the dedicated team behind our success."
+        section="about"
         image="/images/about-hero.jpg"
       />
       
@@ -93,7 +94,7 @@ const About = () => {
             </Col>
             
             <Col lg={6}>
-              <h2 className="section-title">Our Story</h2>
+              <h2 className="section-title">{t('about.intro.title')}</h2>
               <p className="mb-4">
                 Founded in 2010, our company has grown from a small startup to a leading 
                 service provider in the industry. We began with a simple mission: to deliver 
@@ -115,22 +116,22 @@ const About = () => {
               <div className="d-flex justify-content-between mt-4">
                 <div className="stat-box text-center">
                   <h3 className="stat-number">10+</h3>
-                  <p className="stat-label">Years Experience</p>
+                  <p className="stat-label">{t('about.intro.stats.years')}</p>
                 </div>
                 
                 <div className="stat-box text-center">
                   <h3 className="stat-number">500+</h3>
-                  <p className="stat-label">Clients Served</p>
+                  <p className="stat-label">{t('about.intro.stats.clients')}</p>
                 </div>
                 
                 <div className="stat-box text-center">
                   <h3 className="stat-number">1000+</h3>
-                  <p className="stat-label">Projects Completed</p>
+                  <p className="stat-label">{t('about.intro.stats.projects')}</p>
                 </div>
                 
                 <div className="stat-box text-center">
                   <h3 className="stat-number">15+</h3>
-                  <p className="stat-label">Industry Awards</p>
+                  <p className="stat-label">{t('about.intro.stats.awards')}</p>
                 </div>
               </div>
             </Col>
@@ -142,9 +143,9 @@ const About = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Our Mission & Values</h2>
+              <h2 className="section-title">{t('about.values.title')}</h2>
               <p className="section-subtitle">
-                The principles that guide our business and define who we are
+                {t('about.values.subtitle')}
               </p>
             </Col>
           </Row>
@@ -169,7 +170,7 @@ const About = () => {
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
-              <h2 className="section-title">Our Expertise</h2>
+              <h2 className="section-title">{t('about.expertise.title')}</h2>
               <p className="mb-4">
                 With years of experience in the industry, we've developed a comprehensive 
                 set of skills and expertise that enable us to deliver exceptional results 
@@ -192,14 +193,14 @@ const About = () => {
               
               <Link to="/services">
                 <Button variant="primary" className="mt-3">
-                  Explore Our Services
+                  {t('navigation.services')}
                 </Button>
               </Link>
             </Col>
             
             <Col lg={6}>
               <div className="timeline">
-                <h3 className="mb-4">Our Journey</h3>
+                <h3 className="mb-4">{t('about.expertise.journey')}</h3>
                 
                 {milestones.map((milestone, index) => (
                   <div className="timeline-item" key={index}>
@@ -222,9 +223,9 @@ const About = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Meet Our Team</h2>
+              <h2 className="section-title">{t('about.team.title')}</h2>
               <p className="section-subtitle">
-                The dedicated professionals behind our success
+                {t('about.team.subtitle')}
               </p>
             </Col>
           </Row>
@@ -243,14 +244,13 @@ const About = () => {
         <Container>
           <Row className="justify-content-center">
             <Col lg={8}>
-              <h2 className="mb-4">Ready to Work With Us?</h2>
+              <h2 className="mb-4">{t('about.cta.title')}</h2>
               <p className="lead mb-4">
-                Contact our team today to discuss your project and discover how 
-                we can help you achieve your business goals.
+                {t('about.cta.description')}
               </p>
               <Link to="/contact">
                 <Button variant="light" size="lg">
-                  Get in Touch
+                  {t('about.cta.button')}
                 </Button>
               </Link>
             </Col>

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import '../styles/pages/Contact.css';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,39 +39,14 @@ const ContactForm = () => {
     // Simulate API call
     setSubmitted(true);
     
-    // In a real app, you would send the form data to your backend:
-    /*
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    })
-      .then(response => response.json())
-      .then(data => {
-        setSubmitted(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: '',
-        });
-        setValidated(false);
-      })
-      .catch(error => {
-        setError('There was an error submitting your form. Please try again.');
-        console.error('Error:', error);
-      });
-    */
+    // In a real app, you would send the form data to your backend
   };
   
   if (submitted) {
     return (
       <Alert variant="success" className="text-center p-5">
-        <h4>Thank you for contacting us!</h4>
-        <p>We've received your message and will get back to you as soon as possible.</p>
+        <h4>{t('contact.form.success.title')}</h4>
+        <p>{t('contact.form.success.message')}</p>
         <Button 
           variant="outline-success" 
           onClick={() => {
@@ -83,7 +61,7 @@ const ContactForm = () => {
             setValidated(false);
           }}
         >
-          Send Another Message
+          {t('contact.form.success.button')}
         </Button>
       </Alert>
     );
@@ -99,79 +77,79 @@ const ContactForm = () => {
       
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formName">
-          <Form.Label>Your Name</Form.Label>
+          <Form.Label>{t('contact.form.fields.name')}</Form.Label>
           <Form.Control
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Enter your name"
+            placeholder={t('contact.form.fields.placeholders.name')}
             required
           />
           <Form.Control.Feedback type="invalid">
-            Please provide your name.
+            {t('contact.form.fields.validation.name')}
           </Form.Control.Feedback>
         </Form.Group>
         
         <Form.Group className="mb-3" controlId="formEmail">
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label>{t('contact.form.fields.email')}</Form.Label>
           <Form.Control
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your email"
+            placeholder={t('contact.form.fields.placeholders.email')}
             required
           />
           <Form.Control.Feedback type="invalid">
-            Please provide a valid email address.
+            {t('contact.form.fields.validation.email')}
           </Form.Control.Feedback>
         </Form.Group>
         
         <Form.Group className="mb-3" controlId="formPhone">
-          <Form.Label>Phone Number</Form.Label>
+          <Form.Label>{t('contact.form.fields.phone')}</Form.Label>
           <Form.Control
             type="tel"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Enter your phone number"
+            placeholder={t('contact.form.fields.placeholders.phone')}
           />
         </Form.Group>
         
         <Form.Group className="mb-3" controlId="formSubject">
-          <Form.Label>Subject</Form.Label>
+          <Form.Label>{t('contact.form.fields.subject')}</Form.Label>
           <Form.Control
             type="text"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            placeholder="What is this regarding?"
+            placeholder={t('contact.form.fields.placeholders.subject')}
             required
           />
           <Form.Control.Feedback type="invalid">
-            Please provide a subject.
+            {t('contact.form.fields.validation.subject')}
           </Form.Control.Feedback>
         </Form.Group>
         
         <Form.Group className="mb-3" controlId="formMessage">
-          <Form.Label>Your Message</Form.Label>
+          <Form.Label>{t('contact.form.fields.message')}</Form.Label>
           <Form.Control
             as="textarea"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="How can we help you?"
+            placeholder={t('contact.form.fields.placeholders.message')}
             rows={5}
             required
           />
           <Form.Control.Feedback type="invalid">
-            Please provide a message.
+            {t('contact.form.fields.validation.message')}
           </Form.Control.Feedback>
         </Form.Group>
         
         <Button variant="primary" type="submit" className="w-100">
-          Send Message
+          {t('contact.form.fields.submit')}
         </Button>
       </Form>
     </div>

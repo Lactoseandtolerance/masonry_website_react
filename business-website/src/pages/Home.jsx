@@ -8,16 +8,22 @@ import {
   faClock, 
   faAward 
 } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
-import { services } from '../data/services';
+import { getTranslatedServices } from '../data/services';
 import { testimonials } from '../data/testimonials';
 import '../styles/pages/Home.css';
 
 const Home = () => {
+  const { t } = useTranslation();
+  
+  // Get translated services
+  const allServices = getTranslatedServices(t);
+  
   // Get 3 featured services to display on homepage
-  const featuredServices = services.slice(0, 3);
+  const featuredServices = allServices.slice(0, 3);
   
   // Get 2 featured testimonials
   const featuredTestimonials = testimonials.slice(0, 2);
@@ -25,11 +31,7 @@ const Home = () => {
   return (
     <>
       <Hero
-        title="Your Trusted Business Partner"
-        subtitle="Professional Services Tailored to Your Needs"
-        description="We provide top-quality solutions that help your business grow and thrive in today's competitive market."
-        ctaText="Get Started"
-        ctaLink="/contact"
+        section="home"
         image="/images/hero-bg.jpg"
       />
       
@@ -37,9 +39,9 @@ const Home = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Why Choose Us</h2>
+              <h2 className="section-title">{t('home.features.title')}</h2>
               <p className="section-subtitle">
-                Discover what sets our services apart from the competition
+                {t('home.features.subtitle')}
               </p>
             </Col>
           </Row>
@@ -51,9 +53,9 @@ const Home = () => {
                   <div className="feature-icon mb-3">
                     <FontAwesomeIcon icon={faCheckCircle} size="2x" />
                   </div>
-                  <Card.Title>Quality Service</Card.Title>
+                  <Card.Title>{t('home.features.quality.title')}</Card.Title>
                   <Card.Text>
-                    We pride ourselves on delivering exceptional quality in every project we undertake.
+                    {t('home.features.quality.description')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -65,9 +67,9 @@ const Home = () => {
                   <div className="feature-icon mb-3">
                     <FontAwesomeIcon icon={faUsers} size="2x" />
                   </div>
-                  <Card.Title>Expert Team</Card.Title>
+                  <Card.Title>{t('home.features.team.title')}</Card.Title>
                   <Card.Text>
-                    Our team of professionals has the expertise to tackle even the most complex challenges.
+                    {t('home.features.team.description')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -79,9 +81,9 @@ const Home = () => {
                   <div className="feature-icon mb-3">
                     <FontAwesomeIcon icon={faClock} size="2x" />
                   </div>
-                  <Card.Title>Timely Delivery</Card.Title>
+                  <Card.Title>{t('home.features.delivery.title')}</Card.Title>
                   <Card.Text>
-                    We understand the value of your time and always deliver our services on schedule.
+                    {t('home.features.delivery.description')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -93,9 +95,9 @@ const Home = () => {
                   <div className="feature-icon mb-3">
                     <FontAwesomeIcon icon={faAward} size="2x" />
                   </div>
-                  <Card.Title>Customer Satisfaction</Card.Title>
+                  <Card.Title>{t('home.features.satisfaction.title')}</Card.Title>
                   <Card.Text>
-                    Your satisfaction is our top priority, and we go above and beyond to ensure it.
+                    {t('home.features.satisfaction.description')}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -108,9 +110,9 @@ const Home = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">Our Services</h2>
+              <h2 className="section-title">{t('home.services.title')}</h2>
               <p className="section-subtitle">
-                Explore our range of professional services designed to meet your business needs
+                {t('home.services.subtitle')}
               </p>
             </Col>
           </Row>
@@ -127,7 +129,7 @@ const Home = () => {
             <Col>
               <Link to="/services">
                 <Button variant="outline-primary" size="lg">
-                  View All Services
+                  {t('home.services.viewAll')}
                 </Button>
               </Link>
             </Col>
@@ -139,19 +141,18 @@ const Home = () => {
         <Container>
           <Row className="justify-content-center">
             <Col lg={8}>
-              <h2 className="mb-4">Ready to Get Started?</h2>
+              <h2 className="mb-4">{t('home.cta.title')}</h2>
               <p className="lead mb-4">
-                Contact us today for a free consultation and discover how our services
-                can help your business succeed.
+                {t('home.cta.description')}
               </p>
               <Link to="/contact">
                 <Button variant="light" size="lg" className="me-3">
-                  Contact Us
+                  {t('home.cta.contactUs')}
                 </Button>
               </Link>
               <Link to="/services">
                 <Button variant="outline-light" size="lg">
-                  Learn More
+                  {t('home.cta.learnMore')}
                 </Button>
               </Link>
             </Col>
@@ -163,9 +164,9 @@ const Home = () => {
         <Container>
           <Row className="text-center mb-5">
             <Col>
-              <h2 className="section-title">What Our Clients Say</h2>
+              <h2 className="section-title">{t('home.testimonials.title')}</h2>
               <p className="section-subtitle">
-                Don't just take our word for it - hear from our satisfied clients
+                {t('home.testimonials.subtitle')}
               </p>
             </Col>
           </Row>
@@ -182,7 +183,7 @@ const Home = () => {
             <Col>
               <Link to="/services#testimonials">
                 <Button variant="outline-primary">
-                  View More Testimonials
+                  {t('home.testimonials.viewMore')}
                 </Button>
               </Link>
             </Col>
