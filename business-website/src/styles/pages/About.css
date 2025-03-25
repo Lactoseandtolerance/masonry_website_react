@@ -1,0 +1,246 @@
+/* About Page Styles */
+
+/* About Intro Section */
+.about-intro {
+    padding: 5rem 0;
+  }
+  
+  .about-intro img {
+    border-radius: 10px;
+  }
+  
+  .stat-box {
+    padding: 0.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-bottom: 0;
+  }
+  
+  /* Values Section */
+  .value-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .value-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .value-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .value-description {
+    color: var(--gray-600);
+    margin-bottom: 0;
+  }
+  
+  /* Expertise Section */
+  .expertise-section {
+    padding: 5rem 0;
+  }
+  
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+  }
+  
+  .skill-percentage {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .skill-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding: 0 0 0 2rem;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    width: 2px;
+    background-color: var(--gray-300);
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  
+  .timeline-badge {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 1;
+  }
+  
+  .timeline-badge span {
+    position: absolute;
+    left: 30px;
+    white-space: nowrap;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .timeline-content {
+    margin-left: 1rem;
+    padding-top: 1.5rem;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content p {
+    color: var(--gray-600);
+    margin-bottom: 0;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 5rem 0;
+    background-color: var(--gray-100);
+  }
+  
+  .team-member {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .member-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .member-image img {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .team-member:hover .member-image img {
+    transform: scale(1.1);
+  }
+  
+  .social-links {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: bottom 0.3s;
+  }
+  
+  .team-member:hover .social-links {
+    bottom: 0;
+  }
+  
+  .social-links a {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    transition: var(--transition);
+  }
+  
+  .social-links a:hover {
+    background-color: white;
+    color: var(--primary-color);
+  }
+  
+  .team-member .card-body {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .team-member h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 991.98px) {
+    .stat-box {
+      margin-bottom: 1rem;
+    }
+    
+    .timeline {
+      margin-top: 3rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .value-card {
+      margin-bottom: 1.5rem;
+    }
+    
+    .team-member {
+      margin-bottom: 1.5rem;
+    }
+  }

@@ -1,0 +1,135 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--gray-400);
+    padding: 0;
+  }
+  
+  .main-footer {
+    padding: 4rem 0 2rem;
+  }
+  
+  .footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .footer h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+  
+  .footer-about p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: var(--transition);
+  }
+  
+  .social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .footer-links ul li,
+  .footer-services ul li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-links ul li a,
+  .footer-services ul li a {
+    color: var(--gray-400);
+    transition: var(--transition);
+    display: inline-block;
+  }
+  
+  .footer-links ul li a:hover,
+  .footer-services ul li a:hover {
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info li svg {
+    margin-right: 0.75rem;
+    margin-top: 5px;
+    color: var(--primary-color);
+  }
+  
+  .newsletter h6 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter form {
+    display: flex;
+  }
+  
+  .newsletter input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+  }
+  
+  .newsletter button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .newsletter button:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+  
+  .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--gray-500);
+  }
+  
+  .copyright p {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 991.98px) {
+    .footer h5 {
+      margin-top: 1.5rem;
+    }
+    
+    .footer-about {
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter form {
+      max-width: 300px;
+    }
+  }

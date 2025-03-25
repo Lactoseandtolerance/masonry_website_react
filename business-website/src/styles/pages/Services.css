@@ -1,0 +1,301 @@
+/* Services Page Styles */
+
+/* Services Overview */
+.services-overview {
+    padding: 5rem 0;
+  }
+  
+  /* Service Card */
+  .service-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .icon-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .price-container {
+    margin: 1.5rem 0;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .period {
+    font-size: 1rem;
+    color: var(--gray-600);
+  }
+  
+  .features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .features-list li svg {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--secondary-color);
+  }
+  
+  /* Process Section */
+  .process-section {
+    padding: 5rem 0;
+    background-color: var(--gray-100);
+  }
+  
+  .process-card {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  
+  .process-step {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .process-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .process-description {
+    color: var(--gray-600);
+    text-align: center;
+  }
+  
+  .process-arrow {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    color: var(--primary-color);
+    z-index: 1;
+  }
+  
+  /* Pricing Section */
+  .pricing-section {
+    padding: 5rem 0;
+  }
+  
+  .pricing-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .pricing-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .pricing-value {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    vertical-align: top;
+    line-height: 1;
+  }
+  
+  .price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .period {
+    font-size: 1rem;
+    color: var(--gray-600);
+  }
+  
+  .pricing-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-features li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--gray-200);
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .pricing-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+  
+  .pricing-features li.unavailable {
+    color: var(--gray-500);
+    text-decoration: line-through;
+  }
+  
+  .pricing-features li.unavailable::before {
+    content: '✕';
+    color: var(--danger-color);
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: 5rem 0;
+    background-color: var(--gray-100);
+  }
+  
+  .testimonial-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .quote-icon {
+    color: var(--primary-light);
+    opacity: 0.3;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: var(--gray-700);
+    line-height: 1.8;
+  }
+  
+  .testimonial-author img {
+    border: 3px solid var(--primary-color);
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 5rem 0;
+  }
+  
+  .faq-question {
+    font-weight: 600;
+    color: var(--dark-color);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+    box-shadow: none;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--gray-300);
+  }
+  
+  .faq-answer {
+    color: var(--gray-700);
+    line-height: 1.8;
+  }
+  
+  @media (max-width: 991.98px) {
+    .pricing-card.featured {
+      transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+      transform: translateY(-10px);
+    }
+    
+    .process-arrow {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .service-card,
+    .process-card,
+    .pricing-card,
+    .testimonial-card {
+      margin-bottom: 1.5rem;
+    }
+  }
