@@ -232,8 +232,6 @@ const Services = () => {
             </Row>
         </Container>
       </section>
-      
-      // This is just the FAQ section of the Services page
 
       <section className="faq-section py-5">
        <Container>
